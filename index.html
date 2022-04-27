@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="containerLeft">
+            <div class="banner">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="TheOdinProject Logo">
+                <p id="bannerText">ODIN</p>
+            </div>
+        </div>
+        <div id="containerRight">
+            <p class="topText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea adipisci obcaecati tempora quidem? Ex similique deserunt eaque alias doloribus numquam, impedit dignissimos fugit maiores, officia, ducimus voluptates totam ipsa repellendus doloremque laborum aliquid eum rerum quas tenetur! Dolor nesciunt exercitationem doloribus, perferendis veritatis quia nostrum porro nemo quibusdam enim officiis!</p>
+            <p class="topText">Lorem ipsum dolor sit amet.</p>
+            <div class="formField">
+                <p class="topText">lets do this!</p>
+                <form action="#" method="get" id="cadastro">
+                    <div class="field">
+                        <label for="Name">First Name</label>
+                        <input type="text" name="firstName" id="firstName" minlength="1" maxlength="30">
+                    </div>
+                    <div class="field">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" minlength="1" maxlength="30">
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" pattern="(\d{5}[\-]?\d{4})" placeholder="XXXXX-XXXX">
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="field">
+                        <label for="passwordConfirm">Confirm Password</label>
+                        <input type="password" name="passwordConfirm" id="passwordConfirm">
+                    </div>
+                </form>
+            </div>
+            <button type="submit" form="cadastro">create account</button>
+            <p>already have an account? <a href="">login</a></p>
+        </div>
+    </div>
+</body>
+</html>
