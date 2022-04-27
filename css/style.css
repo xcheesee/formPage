@@ -209,6 +209,9 @@ a:hover {
 		flex-direction: column;
 		flex: 1;
 		margin: 0 20px !important;
+		align-items: center;
+		position: relative;
+		left: 30px;
 	}
 
 	#submitCadastro {
