@@ -76,7 +76,7 @@ label {
 }
 
 #containerLeft {
-	padding-top: 15vh;
+	padding-top: 25vh;
 	background: url("../img/halie-west-25xggax4bSA-unsplash.jpg");
 	background-size: cover;
 	flex: 0 1 33%;
@@ -84,14 +84,14 @@ label {
 
 #containerRight {
 	padding-top: 5vh;
-	padding-bottom: 5vh;
+	padding-bottom: 10vh;
 	flex: 0 1 67%;
 	align-self: center;
 }
 
 #containerRight > p, #containerRight > button, .formField > p,
 .formField > form {
-	margin-left: 3rem;
+	margin-left: 5rem;
 }
 
 .formField {
@@ -103,21 +103,26 @@ form {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2em;
+	margin: 0 5rem;
 }
 
 .field {
-	flex: 0 1 40%;
+	flex: 1 1 40%;
+	display: flex;
+	flex-direction: column;
 }
 
 input {
 	border: 1px solid #E5E7EB;
 	border-radius: 5px;
 	font-size: 1.5rem;
+	max-width: 400px;
 }
 
 .topText {
 	font-weight: bold;
 	font-size: 3rem;
+	width: min(40ch, 90%);
 }
 
 p + p {
