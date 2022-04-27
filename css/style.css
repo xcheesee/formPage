@@ -47,8 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-html,body{height:100%}
-
 label {
 	display: block;
 	text-transform: uppercase;
@@ -74,7 +72,7 @@ label {
 
 .container {
 	display: flex;
-	height: max(100%, 100vh);
+	min-height: 100vh;
 }
 
 #containerLeft {
@@ -168,12 +166,37 @@ a:hover {
 	color: blue;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1080px){
+	.container {
+		height: 100%;
+		align-items: center;
+	}
+
 	#containerLeft {
 		display: none;
 	}
 
 	#containerRight {
-		flex: 0 1 100%;
+		flex: 1 1 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	p {
+		align-self: center;
+		text-align: center;
+		justify-self: center;
+	}
+
+	.field {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		margin: 0 20px !important;
+	}
+
+	#submitCadastro {
+		width: 300px;
 	}
 }
